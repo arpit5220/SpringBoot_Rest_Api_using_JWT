@@ -1,0 +1,14 @@
+package com.jwt.example.model;
+
+import lombok.NoArgsConstructor;
+
+@Getter
+@Setter
+@NoArgsConstructor
+public class User {
+
+	private String userId;
+	private String name;
+	private String email;
+	
+}

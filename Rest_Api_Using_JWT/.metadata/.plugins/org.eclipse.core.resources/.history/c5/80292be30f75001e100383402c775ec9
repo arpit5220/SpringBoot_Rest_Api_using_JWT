@@ -1,0 +1,11 @@
+package com.jwt.example.Service;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+
+	private List<User> store=new ArrayList<>();
+}

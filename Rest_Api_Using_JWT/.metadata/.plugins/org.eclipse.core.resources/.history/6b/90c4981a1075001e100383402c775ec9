@@ -1,0 +1,12 @@
+package com.jwt.example.model;
+
+@Getter
+@Setter
+@NoA
+public class User {
+
+	private String userId;
+	private String name;
+	private String email;
+	
+}

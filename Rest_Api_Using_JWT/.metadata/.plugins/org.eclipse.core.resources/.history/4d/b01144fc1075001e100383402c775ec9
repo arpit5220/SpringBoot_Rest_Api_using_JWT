@@ -1,0 +1,21 @@
+package com.jwt.example.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.jwt.example.Service.UserService;
+
+@RestController
+@RequestMapping("/home")
+public class HomeController {
+         
+	@Auto
+	private UserService userService;
+	// http://localhost:8080/home/user
+	@GetMapping("/users")
+	public String getUser()
+	{
+		return "home";
+	}
+}

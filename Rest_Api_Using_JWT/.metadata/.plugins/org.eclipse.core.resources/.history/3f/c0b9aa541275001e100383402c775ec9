@@ -1,0 +1,4 @@
+server.port=
+
+spring.security.user.name=arpit
+spring.security.user.password=arpit

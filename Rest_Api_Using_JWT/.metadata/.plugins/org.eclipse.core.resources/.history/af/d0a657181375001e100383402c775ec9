@@ -1,0 +1,18 @@
+package com.jwt.example.config;
+
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+
+public class AppConfig {
+
+	
+	    @Bean
+	    public UserDetailsService userDetailsService() {
+	        UserDetails userDetails = User.builder().
+	                username("DURGESH")
+	                .password(passwordEncoder().encode("DURGESH")).roles("ADMIN").
+	                build();
+	        return new InMemoryUserDetailsManager(userDetails);
+	    }
+}
