@@ -1,23 +1,19 @@
 # RestAPi using JWT
-Created a Rest Api using SpringBoot and implemented spring Security using JWT Authentication
+- Created a Rest Api using SpringBoot and implemented spring Security using JWT Authentication
 
-# Backend Work
-User Api Call
-Implement Configuration for JWT
+## Backend Work
+- User Api Call
+- Implement Security Configuration for JWT(JSON Web Token)
 
-# Installation and Run
-You can clone this repo and start the serve on localhost
-Update the port number, username and password as per our local database config.
+## Tech Stacks
+- Java Core
+- Spring Data JPA
+- Spring Boot
+- Spring Security
+- Hibernate
+- JWT Authentication 
 
-# Tech Stacks
-Java Core
-Spring Data JPA
-Spring Boot
-Spring Security
-Hibernate
-JWT Authentication 
-
-# User 
+## User 
 ```json
 
 [
@@ -44,4 +40,17 @@ JWT Authentication
 ]
 
 ```
+
+
+## Installation and Run
+- You can clone this repo and start the serve on localhost
+- Update the port number and use POSTMAN to send request 
+
+- http://localhost:9091/auth/login (use to get token)
+
+![Screenshot (23)](https://github.com/arpit5220/SpringBoot_Rest_Api_using_JWT/assets/94009815/6efed96a-a68c-4df8-a661-f56100970e18)
+
+- http://localhost:9091/home/users (send token and get user)
+  
+![Screenshot (25)](https://github.com/arpit5220/SpringBoot_Rest_Api_using_JWT/assets/94009815/df331d4c-172d-4748-beaa-a6639b3e8035)
 
